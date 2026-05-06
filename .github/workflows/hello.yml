@@ -1,0 +1,24 @@
+name: My First Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello
+        run: echo "Hello"
+
+      - name: print Date
+        run: Date
+
+      - name: Print "Completed"
+        run : "Completed"
+
+      - name: "Run All"
+        run: |
+          echo "Step 1 done"
+          echo "Step 2 done"
+          echo "All Done"
+
