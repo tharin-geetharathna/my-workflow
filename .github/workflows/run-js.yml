@@ -1,0 +1,20 @@
+name: Run JS Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Completed
+        uses: actions/checkout@v2
+
+      - name: Setup Node to run JS
+        uses: actions/setup-node@v6
+        with:
+          node-version: 18
+
+      - name: Run JS Script
+        run: node ./index.js 
+
