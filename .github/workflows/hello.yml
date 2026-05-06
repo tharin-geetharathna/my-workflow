@@ -11,10 +11,10 @@ jobs:
         run: echo "Hello"
 
       - name: print Date
-        run: Date
+        run: date
 
       - name: Print "Completed"
-        run : "Completed"
+        run : echo "Completed"
 
       - name: "Run All"
         run: |
