@@ -1,0 +1,16 @@
+name: "Greeting Action"
+description: "used to greet someone"
+
+inputs:
+  MY_NAME: 
+    description: "Who to greet"
+    required: true
+    default: "World"
+
+
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Hello ${{ inputs.MY_NAME}}"
+      shell: bash 
+

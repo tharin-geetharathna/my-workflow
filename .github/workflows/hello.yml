@@ -16,6 +16,14 @@ jobs:
       - name: Print "Completed"
         run : echo "Completed"
 
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: "Runs action-a"
+        uses: ./action-a 
+        with:
+          MY_NAME: "Tharin"
+
       - name: "Run All"
         run: |
           echo "Step 1 done"
